@@ -126,7 +126,7 @@ class O:
             return O( other*self.data )
         else:
             raise ValueError("Can only multiply octonion numbers by other octonion numbers or by scalars")
-<<<<<<< HEAD
+
 
     def mul(self, other):
         if isinstance(other, O):
@@ -142,5 +142,4 @@ class O:
             return O( other*self.data )
         else:
             raise ValueError("Can only multiply octonion numbers by other octonion numbers or by scalars")
-=======
->>>>>>> 3f031049ab689633e431434a6cfeae06ef75bcdf
+
