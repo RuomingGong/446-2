@@ -112,7 +112,7 @@ class O:
         if isinstance(other, O):
             tempQ1 = self.q1 * other.q1
             tempQ2 = other.q2minor * self.q2
-            tempQ3 = other.q2minor * self.q1
+            tempQ3 = other.q2 * self.q1
             tempQ4 = self.q2 * other.q1minor
             e1 = tempQ1-tempQ2
             e2 = tempQ3+tempQ4
@@ -134,7 +134,7 @@ class O:
         if isinstance(other, O):
             tempQ1 = self.q1 * other.q1
             tempQ2 = other.q2minor * self.q2
-            tempQ3 = other.q2minor * self.q1
+            tempQ3 = other.q2 * self.q1
             tempQ4 = self.q2 * other.q1minor
             e1 = tempQ1-tempQ2
             e2 = tempQ3+tempQ4
