@@ -86,8 +86,10 @@ class O:
     
     def __init__(self, data):
         self.data = np.array(data)
+        if self.data.size < 8:
+            self.data = np.concatenate((self.data,np.zeros(8-self.data.size)), axis=None)
         self.q1 = Q((self.data[0],self.data[1],self.data[2],self.data[3]))
-        self.q1 = Q((self.data[4],self.data[5],self.data[6],self.data[7]))
+        self.q2 = Q((self.data[4],self.data[5],self.data[6],self.data[7]))
         self.q1minor = Q((self.data[0],-self.data[1],-self.data[2],-self.data[3]))
         self.q2minor = Q((self.data[4],-self.data[5],-self.data[6],-self.data[7]))
     
