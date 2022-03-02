@@ -104,16 +104,7 @@ class SoundWaves:
             self.t += dt
 
 
-class CGLEquation:
 
-    def __init__(self, domain, u):
-        pass
-
-    def evolve(self, timestepper, dt, num_steps):
-        ts = timestepper(self.problem)
-
-        for i in range(num_steps):
-            # take a timestep
 
 
 class BurgersEquation:
